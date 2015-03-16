@@ -1,0 +1,21 @@
+paths:
+    tests  : ../tests
+    log    : ../../temp/logs
+    data   : ../tests/_data
+    helpers: ../tests/_helpers
+settings:
+    bootstrap   : _bootstrap.php
+    suite_class : \PHPUnit_Framework_TestSuite
+    colors      : true
+    memory_limit: 1024M
+    log         : true
+    defer-flush : true
+modules:
+    config:
+        Db:
+            dsn     : 'pgsql:host=localhost;dbname=unflr'
+            user    : 'admin'
+            password: 'postgres'
+            dump    : ../../data/unflr_schema.sql
+            cleanup : false #  should the dump be reloaded after each test
+            populate: false #  should the dump be reloaded before test suite

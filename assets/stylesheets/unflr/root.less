@@ -1,0 +1,168 @@
+@import "unflr.import.less";
+
+header {
+	border-bottom: 2px solid #f0f0f0;
+	padding: 12px 20px;
+	background: #F8F7F7;
+
+	img {
+		max-height: 55px; 
+	}
+}
+
+h1 {
+	font-size: 27px;
+	line-height: 38px;
+}
+
+.content {
+	padding: 20px 40px;
+}
+
+#top {
+	max-width: 650px;
+	margin: 0 auto;
+	padding: 20px 40px;
+}
+
+#topFormWrap {
+	margin: 0 auto;
+	margin-bottom: 25px;
+	margin-top: 20px;
+
+	@media (min-width: @screen-xs-min) {
+		width: 65%;
+	}
+}
+
+.btn-help {
+	line-height: 12px;
+
+	small {
+		display: block;
+		font-size: 73%;
+	}
+}
+
+#introSteps {
+	@media (min-width: @screen-xs-min) {
+		margin-top: 20px;
+	}
+
+	.container {
+		max-width: 700px;
+	}
+	.row {
+		margin-bottom: 60px;
+	}
+	img {
+		height: 200px;
+		// border: 2px solid #cecece;
+		border-radius: 3px;
+	}
+	.step {
+		@media (min-width: @screen-xs-min) {
+			&.right:not(.image) {
+				padding-left: 40px;
+			}
+			&.left:not(.image) {
+				padding-right: 40px;
+			}
+		}
+	}
+
+
+	.title {
+		font-size: 35px;
+		line-height: 45px;
+		font-weight: bold;
+	}
+	p.sub {
+		font-size: 19px;
+	}
+}
+
+footer {
+	background: #f0f0f0;
+	padding: 40px 20px;
+
+	a {
+		font-weight: bold;
+		font-size: 17px;
+		color: #535353;
+	}
+}
+
+.btn-facebook {
+	color           : #fff;
+	background-color: #3e61a9;
+	border-color    : #30487b;
+
+	&:hover {
+		color: #fff;
+	}
+}
+
+.btn-sm {
+	padding: 4px 9px !important;
+	font-size: 12px;
+}
+
+.textInputSelectable {
+	border: none;
+	width : 100%;
+	cursor: text;
+}
+
+@media (max-width: @screen-xs-min) {
+
+	h1 {
+		font-size: 22px;
+		line-height: 30px;
+	}
+	.container {
+		padding: 0 10px !important;
+	}
+
+	#top {
+		padding: 20px 10px;
+
+		.btn, input {
+			display: block;
+		}
+	}
+	#introSteps {
+		img {
+			display: inline-block;
+			height: 125px;
+		}
+		.step4 {
+			text-align: center;
+
+			img {
+				height: auto;
+				width : 80%;
+				margin: 0 auto;
+			}
+		}
+		p.sub {
+			font-size: 16px;
+			padding-top: 15px;
+		}
+		p.title {
+			margin-bottom: 20px;
+			line-height: 28px;
+			font-size: 23px;
+			// padding-left: 10px;
+			text-align: center;
+		}
+
+		.step {
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+		.row {
+			margin-bottom: 45px;
+		}
+	}
+}

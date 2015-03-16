@@ -1,0 +1,80 @@
+<!DOCTYPE HTML>
+<html lang="{{$head['lang']}}" xmlns:fb="http://ogp.me/ns/fb#">
+
+<?php
+
+$canonical = str_replace('s:/', ':/', Request::url());
+$openGraph = [
+	// 'fb:app_id'      => FB_APP_ID,
+	'og:description' => $head['description'],
+	'og:title'       => $head['title'],
+	'og:type'        => 'website',
+	'og:url'         => Request::url(),
+];
+
+?>
+
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<title>{{$head['title']}}</title>
+	<meta name="description" content="{{$head['description']}}" >
+	<meta name="keywords" content="{{$head['keywords']}}" >
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	@foreach ($openGraph as $key => $value)
+		<meta property="{{$key}}" content="{{$value}}" >
+	@endforeach
+
+	<meta property="og:image" content="{{ASSETS_URL}}/images/snippets/snippet1.jpg">
+
+	<link rel="shortcut icon" href="{{ASSETS_URL}}/images/favicon.ico">
+	<link rel="apple-touch-icon" sizes="118x118" href="{{ASSETS_URL}}/images/apple-touch-icon.png" />
+
+	<!-- stylesheets -->
+	{{HTML::style('//cdn.jsdelivr.net/fontawesome/4.2.0/css/font-awesome.css')}}
+	{{HTML::style('//cdn.jsdelivr.net/g/jquery.bootstrapvalidator@0.5.1')}}
+	{{HTML::style('//fonts.googleapis.com/css?family=Open+Sans')}}
+	{{hAsset::html('main.css')}}
+	{{HTML::style(ASSETS_URL.'/stylesheets/phazon.css')}}
+
+</head>
+
+
+<body class="{{$bodyClass or null}}">
+
+	<script>window.loaded = false;</script>
+
+	<header>
+		<div class="container">
+			<img class="brand" src="{{ASSETS_URL}}/images/logo-text.png" alt="Unflare">
+		</div>
+	</header>
+
+	<div>
+		@yield('content')
+		<div id="fb-root"></div>
+	</div>
+
+	<footer>
+		<div class="container">
+			{{HTML::mailto('contact@dummy.com', __('Contact'), [
+				'class'  => 'pull-right',
+				'target' => '_blank',
+			])}}
+		</div>
+	</footer>
+
+	{{App::make('JSLocalizeDumper')->dump('app')}}
+
+	<!-- js cdn -->
+	{{HTML::script('//cdn.jsdelivr.net/g/jquery@2.1,bootstrap@3.1.0,jquery.bootstrapvalidator@0.5.1')}}
+
+	<!-- js local -->
+	{{hAsset::html('main.js')}}
+	{{hAsset::html('locale_en.js')}}
+
+</body>
+</html>
+

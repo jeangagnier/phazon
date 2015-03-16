@@ -1,0 +1,20 @@
+{{Form::open(['url' => '/register', 'class' => 'form'])}}
+		
+	{{hView::formGroup('email', null, hForm::input('email', null, 'form-control email', true, $type = 'email', [
+		'id' => \Str::quickRandom(),
+		'data-bv-notempty' => 'true',
+		'data-bv-notempty-message' => __('Please enter your email address'),
+		'placeholder' => __('Your email address'),
+	]))}}
+
+	@if ($errors = \Session::get('errors', new \Illuminate\Support\MessageBag)) 
+		{{$errors->first('my_time', '<p class="help-block">:message</p>')}}
+	@endif
+
+	{{Form::honeypot('my_name', 'my_time')}}
+
+	<button type="submit" class="btn btn-success btn-mlg btn-block">
+		{{__('Early access')}}
+	</button>
+
+{{Form::close()}}

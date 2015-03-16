@@ -1,0 +1,64 @@
+@import "unflr.import.less";
+
+.modal-content {
+	text-align: center;
+	box-shadow: none;
+	border: none;
+	border-radius: 0;
+}
+
+.modal-body {
+	padding: 35px;
+	padding-top: 25px;
+
+	h1 {
+		font-size: 42px;
+		line-height: 55px;
+		margin-bottom: 20px;
+	}
+	p {
+		font-size: 20px;
+	}
+	p.lead {
+		font-weight: bold;
+		font-size: 24px;
+
+		input {
+			text-align: center;
+		}
+	}
+
+	.btn {
+		.fa {
+			margin-right: 11px;
+			font-size: 25px;
+			vertical-align: sub;
+		}
+	}
+
+	@media (max-width: @screen-xs-min) {
+		padding: 20px;
+
+		h1 {
+			font-size: 24px;
+			line-height: 32px;
+			margin-bottom: 15px;
+		}
+		p {
+			font-size: 16px;
+		}
+		p.lead {
+			font-size: 19px;
+		}
+		.btn {
+			padding: 11px 17px;
+
+			.fa {
+				margin-right: 8px;
+				font-size: 21px;
+				vertical-align: sub;
+			}
+		}
+	}
+
+}

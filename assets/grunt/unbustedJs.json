@@ -1,0 +1,6 @@
+{
+	"main"     : "main.js",
+	"debug"    : "debug.js",
+	"locale_fr": "locale_fr.js",
+	"locale_en": "locale_en.js"
+}

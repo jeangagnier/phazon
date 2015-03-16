@@ -1,0 +1,77 @@
+<?php
+
+$steps = [
+	[
+		'title'   => __('Feature 1'),
+		'text'    => __('Awesome feature 1'),
+		'classes' => ['left'  => 'col-xxs-6 col-xs-5', 'right' => 'col-xxs-6 col-xs-7'],
+		'form'    => $abFirstStepForm,
+	],
+	[
+		'title'   => __('Feature 2'),
+		'text'    => __('Awesome feature 2'),
+		'classes' => ['left' => 'col-xxs-6 col-xs-7', 'right' => 'col-xxs-6 col-xs-5'],
+	],
+	[
+		'title'   => __('Feature 3'),
+		'text'    => __('Awesome feature 3'),
+		'classes' => ['left' => 'col-xxs-6 col-xs-5', 'right' => 'col-xxs-6 col-xs-7'],
+	],	
+	[
+		'title'   => __('Feature 4'),
+		'text'    => null,
+		'classes' => ['left' => 'col-xxs-12 col-xs-7', 'right' => 'col-xxs-12 col-xs-5'],
+		'form'    => true,
+	],
+];
+
+?>
+
+<div id="introSteps">
+	@foreach ($steps as $index => $step)
+		<?php $odd = ($index % 2 === 0) ?>
+		<div class="container">
+
+			<p class="title visible-xxs">
+				<small>{{$index+1}}. </small>
+				{{$step['title']}}
+			</p>
+
+			<div class="row">
+
+				@foreach (['left', 'right'] as $pos)
+					<?php $isText = ( ($odd && $pos === 'right') or ( !$odd && $pos === 'left') ) ?>
+					<div class="step step{{$index+1}} {{$step['classes'][$pos]}} {{$pos}} {{$isText ? null : 'image'}}">
+						@if ($isText)
+							<p class="title hidden-xxs">
+								<small>{{$index+1}}. </small>
+								{{$step['title']}}
+							</p>
+							@if (isset($step['form']) and $step['form'])
+								<div class="hidden-xxs">
+									@include('web._form')
+								</div>
+							@else
+								<p class="sub">{{$step['text']}}</p>
+							@endif
+						@else
+							<?php $class = ($index === 3) ? 'hidden-xxs' : null; ?>
+							<img 
+								class="img-responsive {{$class}}" 
+								src="http://placehold.it/250x200">
+
+							@if ($index === 3)
+								<div class="visible-xxs">
+									<img class="mb20" src="http://placehold.it/250x200">
+									@include('web._form')
+								</div>
+							@endif
+						@endif
+
+					</div>
+				@endforeach
+
+			</div>
+		</div>				
+	@endforeach
+</div>	

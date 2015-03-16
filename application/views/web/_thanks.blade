@@ -1,0 +1,66 @@
+<?php 
+$successCount  = Config::get('unflr.referralsCountForSuccess'); 
+?>
+
+<div class="modal-backdrop in"></div>
+
+<div class="modal show">
+	<div class="modal-dialog modal-lg">
+		<div class="modal-content">
+
+			<div class="modal-body">
+				<p>
+					{{Session::get('message')}}
+					<a href="/" class="btn btn-sm btn-default pull-right">
+						{{__('Close')}}
+					</a>
+				</p>	
+
+				{{-- in progress --}}
+				@if ($referralCount < $successCount)
+					<h1>{{__('Want to collect the first 500 emails for free and get instant access?')}}</h1>
+					<img src="http://store.mightytaco.com/Public/images/product%5CKeychain.jpg" class="keychainImage img-responsive">
+
+					<p>
+					{{-- first referral --}}
+					@if ($referralCount > 0)
+						{{__('Only %d friends left to sign up with this unique URL:', ($successCount - $referralCount))}}
+					{{-- 0 referral --}}
+					@else
+						{{__('Get 5 of your friends to sign up with this unique URL:')}}
+					@endif
+					</p>
+
+				{{-- success --}}
+				@else
+					<h1>{{__('Success! Keychain offered')}}</h1>
+					<img src="http://store.mightytaco.com/Public/images/product%5CKeychain.jpg" class="keychainImage img-responsive">
+					
+					<p>
+						{{__('<i>Describe the offer</i>.')}}
+					</p>
+					<p>
+						{{__('Here\'s your coupon: ')}}
+						{{$user['coupon']}}
+					</p>
+				@endif
+
+
+				<p class="lead">
+					{{HTML::link($referralLink, null, ['target' => '_blank'])}}
+				</p>
+
+				<a 
+					class="btn btn-facebook btn-help btn-lg" 
+					href="{{uHelpers::facebookSharer($referralLink)}}"
+					rel="nofollow" 
+					target="_blank"> 
+					<i class="fa fa-facebook"></i>
+					{{__('Share on Facebook')}}
+					<small>{{__('Private messge or wall')}}</small>
+				</a>
+			</div>
+
+		</div>
+	</div>
+</div>

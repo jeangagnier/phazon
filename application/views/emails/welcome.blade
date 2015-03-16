@@ -1,0 +1,16 @@
+<h1>{{__('Thanks for signing up')}}</h1>
+
+<p>
+	{{__(
+		'Want to collect the first 500 emails for free and get instant access? Invite 5 friends to sign up using this unique URL:'
+	)}}
+</p>
+
+<p style="font-size: 16px;">
+	{{uHelpers::emailLink('?ref='.$user['referral_code'])}}
+</p>
+
+{{uHelpers::emailPrimaryLink(
+	uHelpers::fbSharerReferral($user['referral_code']), 
+	__('Share on Facebook')
+)}}

@@ -1,0 +1,31 @@
+<?php 
+$successCount  = Config::get('unflr.referralsCountForSuccess'); 
+?>
+
+<h1>
+	{{__('%d / %d sign-ups!', $successCount, $successCount)}}
+</h1>
+
+
+<p>
+	{{__('<i>Describe the offer</i>.')}}
+</p>
+<p>
+	{{__('Here\'s your coupon :)')}}
+	{{$user['coupon']}}
+</p>
+
+<img src="http://store.mightytaco.com/Public/images/product%5CKeychain.jpg" 
+	width="250" 
+	height="250" 
+	border="0" 
+	alt="my picture">
+
+<p style="font-size: 16px;">
+	{{uHelpers::emailLink('?ref='.$user['referral_code'])}}
+</p>
+
+{{uHelpers::emailPrimaryLink(
+	uHelpers::fbSharerReferral($user['referral_code']), 
+	__('Share on Facebook')
+)}}

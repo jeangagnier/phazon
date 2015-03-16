@@ -1,0 +1,43 @@
+<div class="modal" id="unbounceModal">
+	<div class="modal-dialog">
+		<div class="modal-content">
+
+			<div class="modal-body">
+				<p>
+					<a id="removeModal" class="btn btn-sm btn-default pull-right">
+						{{__('Close')}}
+					</a>
+				</p>
+
+				<h1>{{__('Before you leave')}}</h1>
+				<p>
+					{{__('Invite your friends to sign-up')}}
+				</p>
+
+				<div class="row">
+					<div class="col-md-6 col-sm-12">
+						<a 
+							class="btn btn-block btn-facebook btn-lg sharerPopup mt20" 
+							href="{{uHelpers::facebookSharer(PUBLIC_FULL_URL)}}"
+							rel="nofollow"
+							target="_blank">
+							<i class="fa fa-facebook pull-left"></i>
+							{{__('OK, Share on<br> Facebook')}}
+						</a>
+					</div>
+					<div class="col-md-6 col-sm-12">
+						<a 
+							class="btn btn-block btn-default btn-lg sharerPopup mt20" 
+							href="{{uHelpers::facebookSharer(PUBLIC_FULL_URL)}}"
+							rel="nofollow"
+							target="_blank">
+							<i class="fa fa-angellist pull-left"></i>
+							{{__('NO, just leave<b>me alone')}}
+						</a>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,25 @@
+#!/usr/bin/env php
+<?php
+
+// Environment
+foreach ($argv as $arg) {
+	foreach (array('development', 'stage', 'production') as $env) {
+		if ($arg === '--env='.$env) {
+			putenv('ENVIRONMENT='.$env);
+		}
+	}
+}
+
+// Bootstrap & load Laravel
+define('ARTISAN', true);
+require 'bootstrap.php';
+
+$app->boot();
+
+// Load, run & shutdown Artisan
+$app->setRequestForConsoleEnvironment();
+
+$artisan = Illuminate\Console\Application::start($app);
+$status = $artisan->run();
+$app->shutdown();
+exit($status);

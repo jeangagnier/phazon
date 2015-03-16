@@ -1,0 +1,11 @@
+<?php $label = __('Unsubscribe'); ?>
+
+<p>
+	{{__('You are receiving this email because you signed up to Unflare')}}<br>
+
+	@if (isset($user))
+		<unsubscribe>
+			{{uHelpers::emailLink('other/unsubscribe/'.$user['unsubscribe_guid'], $label)}}
+		</unsubscribe>
+	@endif
+</p>

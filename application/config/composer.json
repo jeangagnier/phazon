@@ -1,0 +1,48 @@
+{
+
+	"config": {
+		"vendor-dir": "../../vendor/",
+		"minimum-stability": "dev",
+		"prefer-stable": false
+	},
+
+	"require": {
+		"aws/aws-sdk-php": "~2.6",
+		"captbaritone/mailcatcher-codeception-module": "dev-master",
+		"guzzlehttp/guzzle": "~4.0",
+		"indatus/dispatcher": "1.4",
+		"leafo/lessphp": "0.4.0",
+		"mandrill/mandrill": "1.0.53",
+		"mattketmo/email-checker": "1.0",
+		"msurguy/honeypot": "dev-master",
+		
+		"barryvdh/laravel-debugbar": "v1.6.6",
+		"codeception/codeception": "2.0.5",
+		"crhayes/blade-partials": "dev-master",
+		"fzaninotto/faker": "v1.4.0",
+		"jenssegers/agent": "v2.1.1",
+		"laravel/laravel": "4.2.11",
+		"laravel/framework": "4.2.17",
+		"mccool/laravel-auto-presenter": "2.1.0",
+		"php-console/laravel-service-provider": "1.2.1",
+		"raulfraile/ladybug": "~1.0",
+		"rosio/php-to-javascript-variables": "~1.0",
+		"valorin/l4-down-safe": "v1.1.0",
+		"watson/validating": "0.9.*",
+		"zendframework/zend-cache": "2.2.6",
+		"zendframework/zend-i18n": "2.2.6"
+	},
+	
+	"autoload": {
+		"classmap": [
+			"../../application/"
+		]
+	},
+
+	"scripts": {
+		"post-update-cmd": [
+			"php ./../artisan debugbar:publish"
+		]
+	}
+
+}

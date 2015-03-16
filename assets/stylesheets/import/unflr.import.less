@@ -1,0 +1,41 @@
+@import "variables.less";
+@import "mixins.less";
+
+// Misc 
+// =======================================================
+@imagesPath: '/assets/images/';
+
+// Colors
+// =======================================================
+
+// @bgColor1: #ebf5f3; // green light
+// @bgColor1: #F5F5EB; // yellow light
+@bgColor1: #F3F3F3; // gray
+// @bgColor2: #53A840;
+@bgColor2: #2F455C; // green
+@bgColor3: #2B66C2;
+@bgFooter: #1C8D97;
+@headersColor: #666;
+
+// Bootstrap
+// =======================================================
+@font-family-sans-serif: 'Open Sans';
+@font-size-base: 15px;
+@headings-line-height: 1.13;
+
+@font-size-h1  : floor(@font-size-base * 2.40); // 35px
+@font-size-h2  : floor(@font-size-base * 1.85); // 27px
+@font-size-h3  : floor(@font-size-base * 1.3); // 19px
+@font-size-h4  : floor(@font-size-base * 1.1); // 16px
+
+@screen-lg:                  992px;
+@screen-lg-min:              @screen-lg;
+@screen-lg-desktop:          @screen-lg-min;
+
+
+// Mixins
+// =======================================================
+
+.fontSize(@base) {
+	font-size: floor(@font-size-base * @base);
+}

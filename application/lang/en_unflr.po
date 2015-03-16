@@ -1,0 +1,271 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: unflare\n"
+"POT-Creation-Date: 2014-10-27 11:06+0100\n"
+"PO-Revision-Date: 2014-10-27 11:07+0100\n"
+"Last-Translator: Younès EL BIACHE <younes.elbiache@gmail.com>\n"
+"Language-Team: unflare\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.4\n"
+"X-Poedit-KeywordsList: __\n"
+"X-Poedit-Basepath: E:\\www\\ubuntu\\unflr\\\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SearchPath-0: application\\.\n"
+"X-Poedit-SearchPath-1: temp\\views\\.\n"
+
+#: application\./Yeb/Libraries/ExceptionsHandler.php:29
+msgid "Un problème est survenu"
+msgstr ""
+
+#: application\./Yeb/Libraries/ExceptionsHandler.php:37
+msgid "Le groupe ou la ressource demandé n'existe plus."
+msgstr ""
+
+#: application\./Yeb/Libraries/ExceptionsHandler.php:41
+msgid "Oops! Il y a quelques erreurs :"
+msgstr ""
+
+#: application\./config/unflr.php:15
+msgid "Your referral link"
+msgstr ""
+
+#: application\./config/unflr.php:18
+#, php-format
+msgid "%%d on %%d - Almost there!"
+msgstr ""
+
+#: application\./config/unflr.php:21
+#, php-format
+msgid "%%d sur %%d - Referrals success!"
+msgstr ""
+
+#: application\./config/unflr.php:26
+msgid "description"
+msgstr ""
+
+#: application\./config/unflr.php:27
+msgid "keywords"
+msgstr ""
+
+#: application\./controllers/Other.php:17
+msgid "<strong>You won't receive any more email</strong>"
+msgstr ""
+
+#: application\./controllers/Root.php:45
+msgid "Thank you for signing up!"
+msgstr ""
+
+#: application\./controllers/Root.php:51
+msgid "You already registered!"
+msgstr ""
+
+#: application\./controllers/Root.php:82
+msgid "Please use a real address!"
+msgstr ""
+
+#: application\./controllers/Root.php:88
+msgid "We like your enthusiasm but try sharing this with your friends!"
+msgstr ""
+
+#: application\./views/emails/partials/footer.blade:1
+#: temp\views\./fa44578f2237805cf96dbef78af5b088:1
+msgid "Unsubscribe"
+msgstr ""
+
+#: application\./views/web/_steps.blade:5
+#: temp\views\./a1b86c8bbf8167d482b0ee996d16e936:5
+msgid "Feature 1"
+msgstr ""
+
+#: application\./views/web/_steps.blade:6
+#: temp\views\./a1b86c8bbf8167d482b0ee996d16e936:6
+msgid "Awesome feature 1"
+msgstr ""
+
+#: application\./views/web/_steps.blade:11
+#: temp\views\./a1b86c8bbf8167d482b0ee996d16e936:11
+msgid "Feature 2"
+msgstr ""
+
+#: application\./views/web/_steps.blade:12
+#: temp\views\./a1b86c8bbf8167d482b0ee996d16e936:12
+msgid "Awesome feature 2"
+msgstr ""
+
+#: application\./views/web/_steps.blade:16
+#: temp\views\./a1b86c8bbf8167d482b0ee996d16e936:16
+msgid "Feature 3"
+msgstr ""
+
+#: application\./views/web/_steps.blade:17
+#: temp\views\./a1b86c8bbf8167d482b0ee996d16e936:17
+msgid "Awesome feature 3"
+msgstr ""
+
+#: application\./views/web/_steps.blade:21
+#: temp\views\./a1b86c8bbf8167d482b0ee996d16e936:21
+msgid "Feature 4"
+msgstr ""
+
+#: temp\views\./58a393612660adc56412dee8a377f6aa:8
+#: temp\views\./f38d4c0f32f9ae2f51ddbeb37c0c2cc6:16
+msgid "Close"
+msgstr ""
+
+#: temp\views\./58a393612660adc56412dee8a377f6aa:13
+msgid "Before you leave"
+msgstr ""
+
+#: temp\views\./58a393612660adc56412dee8a377f6aa:15
+msgid "Invite your friends to sign-up"
+msgstr ""
+
+#: temp\views\./58a393612660adc56412dee8a377f6aa:27
+msgid "OK, Share on<br> Facebook"
+msgstr ""
+
+#: temp\views\./58a393612660adc56412dee8a377f6aa:38
+msgid "NO, just leave<b>me alone"
+msgstr ""
+
+#: temp\views\./5ed48c3e21befad0d179f52379617ddc:65
+msgid "Contact"
+msgstr ""
+
+#: temp\views\./6f26a496231df5b4835729d2ad4c9a7d:7
+msgid "Please enter your email address"
+msgstr ""
+
+#: temp\views\./6f26a496231df5b4835729d2ad4c9a7d:8
+msgid "Your email address"
+msgstr ""
+
+#: temp\views\./6f26a496231df5b4835729d2ad4c9a7d:21
+msgid "Early access"
+msgstr ""
+
+#: temp\views\./918fa7396ea5d114b6d726da4c8491c5:6
+#, php-format
+msgid "%d / %d sign-ups!"
+msgstr ""
+
+#: temp\views\./918fa7396ea5d114b6d726da4c8491c5:12
+#: temp\views\./f38d4c0f32f9ae2f51ddbeb37c0c2cc6:41
+msgid "<i>Describe the offer</i>."
+msgstr ""
+
+#: temp\views\./918fa7396ea5d114b6d726da4c8491c5:16
+#: temp\views\./f38d4c0f32f9ae2f51ddbeb37c0c2cc6:45
+msgid "Keep sharing the link below, new offers coming soon :)"
+msgstr ""
+
+#: temp\views\./918fa7396ea5d114b6d726da4c8491c5:27
+#: temp\views\./d014313e4879d89669fe1fc6bd0809ca:26
+#: temp\views\./f38d4c0f32f9ae2f51ddbeb37c0c2cc6:61
+msgid "Share on Facebook"
+msgstr ""
+
+#: temp\views\./b2e4eab0441bcf3d0415f9660098164a:5
+msgid "Unflare, the awesome referral tool"
+msgstr ""
+
+#: temp\views\./d014313e4879d89669fe1fc6bd0809ca:7
+#, php-format
+msgid "%d / %d sign-ups"
+msgstr ""
+
+#: temp\views\./d014313e4879d89669fe1fc6bd0809ca:13
+#, php-format
+msgid "Get %d of your friends to sign up. Keep sharing the link below:"
+msgstr ""
+
+#: temp\views\./f38d4c0f32f9ae2f51ddbeb37c0c2cc6:23
+msgid "Want to collect the first 500 emails for free and get instant access?"
+msgstr ""
+
+#: temp\views\./f38d4c0f32f9ae2f51ddbeb37c0c2cc6:28
+#, php-format
+msgid "Only %d friends left to sign up with this unique URL:"
+msgstr ""
+
+#: temp\views\./f38d4c0f32f9ae2f51ddbeb37c0c2cc6:32
+msgid "Get 5 of your friends to sign up with this unique URL:"
+msgstr ""
+
+#: temp\views\./f38d4c0f32f9ae2f51ddbeb37c0c2cc6:39
+msgid "Success!"
+msgstr ""
+
+#: temp\views\./f38d4c0f32f9ae2f51ddbeb37c0c2cc6:63
+msgid "Private messge or wall"
+msgstr ""
+
+#: temp\views\./fa44578f2237805cf96dbef78af5b088:4
+msgid "You are receiving this email because you signed up to Unflare"
+msgstr ""
+
+#: temp\views\./fc6610889404ba3ebcee59769c593bf0:1
+msgid "Thanks for signing up"
+msgstr ""
+
+#: temp\views\./fc6610889404ba3ebcee59769c593bf0:5
+msgid ""
+"Want to collect the first 500 emails for free and get instant access? Invite "
+"5 friends to sign up using this unique URL:"
+msgstr ""
+
+#: temp\views\./fc6610889404ba3ebcee59769c593bf0:17
+msgid "Partager via Facebook"
+msgstr ""
+
+#~ msgid "Find the cheapest way to send money to friends and family"
+#~ msgstr "Trouvez le meilleur moyen d'envoyer de l'argent à l'étranger"
+
+#~ msgid "From"
+#~ msgstr "De"
+
+#~ msgid "To"
+#~ msgstr "Vers"
+
+#~ msgid "Compare"
+#~ msgstr "Comparer"
+
+#~ msgid "Reception Type"
+#~ msgstr "Mode de Reception"
+
+#~ msgid "Sending Type"
+#~ msgstr "Mode d'Envoi"
+
+#~ msgid "Transfer Time"
+#~ msgstr "Temps de transfert"
+
+#~ msgid "All"
+#~ msgstr "Tous"
+
+#~ msgid "What is Tawipay ?"
+#~ msgstr "Qu'est ce que Tawipay ?"
+
+#~ msgid "Corridors"
+#~ msgstr "Corridors"
+
+#~ msgid "FAQ"
+#~ msgstr "FAQ"
+
+#~ msgid "About Us"
+#~ msgstr "À propos"
+
+#~ msgid "Our mission"
+#~ msgstr "Notre mission"
+
+#~ msgid "Team"
+#~ msgstr "L'Equipe"
+
+#~ msgid "Media"
+#~ msgstr "Presse"
+
+#~ msgid "Log in or Register"
+#~ msgstr "Se connecter ou s'inscrire"

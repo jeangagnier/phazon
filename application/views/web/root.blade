@@ -1,0 +1,21 @@
+@section('content')
+
+<div class="text-center" id="top">
+	<h1>
+		{{__('Unflare, the awesome referral tool')}}
+	</h1>
+	@if ( !$abFirstStepForm)
+		<div id="topFormWrap">
+			@include('web._form')
+		</div>
+	@endif
+</div>
+
+@include('web._steps')
+@include('web._unbounce')
+
+@if (isset($referralLink))
+	@include('web._thanks')
+@endif
+
+@stop
